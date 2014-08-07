@@ -13,7 +13,7 @@ PUSHER_KEY = "de504dc5763aeef9ff52"
 
 def trade_callback(data):
     price_data = json.loads(data)       # Convert json string to dict
-    print(price_data["price"])
+    print("Current price: \033[37m", price_data["price"])
 
 def connect_handler(data):
   channel = pusher.subscribe('live_trades')
