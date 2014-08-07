@@ -1,5 +1,7 @@
-# Bitstamp bitcoin price ticker
-
+# -*- coding: utf-8 -*-
+""" Bitstamp bitcoin price ticker
+    Using json and pusherclient
+"""
 import json
 import pusherclient
 import time
